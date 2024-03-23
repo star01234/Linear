@@ -1,0 +1,43 @@
+
+#stack-container {
+    width: 200px;
+    min-height: 300px;
+    margin: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#block-container {
+    width: 200px;
+    min-height: 300px;
+    margin: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;    
+}
+
+.block {
+    width: 80px; 
+    height: 80px;
+    margin: 4px 0;
+    cursor: grab;
+}
+
+.block2 {
+    width: 80px;
+    height: 80px;
+    margin: 2px 0;
+    cursor: grab;
+}
+
+.full-message {
+    color: red;
+    font-weight: bold;
+}
+

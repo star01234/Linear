@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Stack Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container py-4">
+    <button id="peek" class="btn btn-primary me-2">Peek</button>
+    <button id="change" class="btn btn-secondary">Change</button>
+
+    <div id="status-container" class="my-4">
+        <p>Is Empty: <span id="is-empty"></span></p>
+        <p>Is Full: <span id="is-full"></span></p>
+        <p>Count: <span id="count"></span></p>
+    </div>
+
+    <div class="row my-4">
+        <div class="col-md-6" id="block-container">
+            <div class="block card" draggable="true">
+                <img src="https://png.pngtree.com/png-clipart/20210314/original/pngtree-cute-cartoon-characters-png-image_6103978.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="block2 card mt-2" draggable="true">
+                <img src="https://img.lovepik.com/free-png/20210928/lovepik-lovely-mengmeng-steamed-stuffed-stuffed-stuffed-png-image_401059244_wh1200.png" class="card-img-top" alt="">
+            </div>
+        </div>
+        <div class="col-md-6" id="stack-container"></div>
+    </div>
+
+    <div class="full-message alert alert-success my-4" id="full-message"></div>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
