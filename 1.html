@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>030</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        let se6545 = [
+            ["Boy", "Perth", "Eak", "",
+            "San", "Tan", "Tin", ""],
+            ["Oat", "Guy", "Best", "K",
+            "<span style='color:blue;'>Ohm</span>","", "Vick", ""],
+            ["Four", "P", "<span style='color:red;'>Aum</span>", "<span style='color:blue;'>Earth</span>",
+            "Oke", "", "", ""],
+            ["<span style='color:red;'>Ter</span>", "<span style='color:blue;'>Bonus</span>", "Pim", "Min",
+            "", "<span style='color:red;'>Jeab</span>", "Mind", "<span style='color:blue;'>Bell</span>"]
+        ];
+    
+        document.write("<table >");
+    
+        for (let i = 0; i < se6545.length; i++) {
+            document.write("<tr>");
+    
+            for (let j = 0; j < se6545[i].length; j++) {
+                document.write("<td>" + se6545[i][j] + "</td>");
+            }
+    
+            document.write("</tr>");
+        }
+    
+        document.write("</table>");
+    </script>
+</body>
+</html>

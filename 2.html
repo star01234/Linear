@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>030</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart" width="50" height="20"></canvas>
+
+  <script>
+    // ตัวแปรข้อมูล x, y, และ z
+    const x = [-3, -2, -1, 0, 1, 2, 3];
+    const y = [];
+    const z = [];
+
+    // คำนวณค่า y และ z
+    for (let i = 0; i < x.length; i++) {
+      y[i] = 0.5 * x[i] + 2;
+      z[i] = -1 * x[i] + 5;
+    }
+
+    // สร้าง Chart แสดงข้อมูล x, y, และ z
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: x,
+        datasets: [
+          {
+            label: 'y = 0.5x + 2',
+            data: y,
+            borderColor: 'red',
+            backgroundColor: 'rgba(255, 0, 0, 0.2)',
+            fill: false,
+          },
+          {
+            label: 'z = -x + 5',
+            data: z,
+            borderColor: 'blue',
+            backgroundColor: 'rgba(0, 0, 255, 0.2)',
+            fill: false,
+          },
+        ],
+      },
+    });
+  </script>
+</body>
+</html>
